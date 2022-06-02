@@ -1,0 +1,41 @@
+body {
+    text-align: center  ;
+    font-family: monospace;
+    margin: 0;
+    padding: 1em;
+    line-height: 1.6;
+}
+
+h1 {
+    color: red;
+
+}
+
+h2 {
+    color: purple;
+}
+
+h3 {
+    color: orange;
+    text-transform: capitalize;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
+.products-list li {
+    margin-bottom: 5em;
+}
+
+.left-align {
+    text-align: left;
+}
