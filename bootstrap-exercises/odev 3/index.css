@@ -1,0 +1,248 @@
+:root {
+    --clr-dark-gray: #1d2226;
+    --clr-light-gray: #38434f;
+    --clr-dark: #000000;
+
+    --clr-text-light: #ffffffe6;
+    --clr-text-low-emp: #ffffff99;
+
+    --clr-action: #70b5f9;
+}
+
+body {
+    font-family: 'Roboto', FontAwesome, sans-serif;
+    background-color: var(--clr-dark);
+}
+
+
+/*
+custom styles
+*/
+
+.muted {
+    color: var(--clr-text-low-emp);
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--clr-light-gray);
+}
+
+/*
+    navbar
+*/
+
+nav  {
+    background-color: var(--clr-dark-gray);
+    border-bottom: 1px solid var(--clr-light-gray);
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-input {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-text-light);
+    font-size: .8rem;
+    border: none;
+    padding: 0 0 0 40px;
+
+}
+
+.search-input:focus {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-text-light);
+    outline: 0;
+    box-shadow: unset;
+}
+
+.search-icon {
+    color: var(--clr-text-low-emp);
+    position: absolute;
+    margin-left: 15px;
+    font-size: .75rem;
+}
+
+.nav-item {
+    width: 80px;
+}
+
+.nav-link {
+    font-size: .7rem;
+    border-bottom: solid 2px transparent;
+    padding: 0;
+}
+
+.nav-link i {
+    display: block;
+    color: var(--clr-text-low-emp);
+    font-size: 1rem;
+}
+
+    /* 
+        i had to win the specificity war no matter what it took away from me
+    */
+
+.navbar-dark .navbar-nav .active-link .nav-link {
+    color: var(--clr-text-light);
+    border-bottom: solid 2px var(--clr-text-light);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus i, 
+.navbar-dark .navbar-nav .nav-link:hover i {
+    color: var(--clr-text-light);
+}
+
+nav .navbar-nav .active-link .nav-link:hover {
+    color: var(--clr-text-light);
+}
+
+.active-link i {
+    color: var(--clr-text-light);
+}
+
+    /*
+        dropdown-menu
+    */
+
+.dropdown-menu {
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-text-light);
+}
+.dropdown-me-menu {
+    width: 200px;
+}
+
+.btn-outline {
+    color: var(--clr-action);
+    border: solid 1px;
+    padding: 0;
+    font-size: .70rem;
+    font-weight: 700;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    color: var(--clr-action);
+    background-color: rgba(112, 181, 249, .3);
+    outline: 1px solid;
+    outline-offset: -2px;
+}
+
+.account-container {
+    font-size: .9rem;
+}
+
+.account-container .small {
+    color: var(--clr-text-low-emp);
+    display: block;
+    margin-top: 10px;
+}
+
+/*
+    sidebar-left
+*/
+
+.sidebar-left {
+    position: relative;
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-text-light);
+    font-size: .7rem;
+}
+
+.bg-img {
+    width: 100%;
+    height: 55px;
+    background-image: url(//picsum.photos/id/384/750);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sidebar-left img {
+    border: 2px solid var(--clr-dark-gray);
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.list-group-container {
+    color: var(--clr-text-low-emp);
+}
+
+.list-group-container .list-group-item {
+    background-color: var(--clr-dark-gray);
+    border: none;
+    border-radius: 0;
+    color: var(--clr-text-low-emp);
+}
+
+.list-group-container span {
+    color: var(--clr-text-light);
+}
+
+.list-group-item-action:focus, 
+.list-group-item-action:hover {
+    text-decoration: none;
+    background-color: var(--clr-light-gray);
+}
+
+.list-group-container .badge {
+    font-size: .7rem;
+    font-weight: 300;
+    color: var(--clr-action);
+}
+
+.action-link {
+    color: var(--clr-action);
+}
+
+.action-link:hover,
+.action-link:focus {
+    color: var(--clr-action);
+}
+
+/*
+    sidebar-right
+*/
+
+.sidebar-right {
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-text-light);
+    font-size: 1rem;
+}
+
+.btn-follow {
+    color: var(--clr-text-light);
+    font-size: .9rem;
+    border-color: var(--clr-text-light);
+}
+
+.btn-follow:hover,
+.btn-follow:focus {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-text-light);
+    outline: 1px solid var(--clr-text-light);
+    outline-offset: -2px;
+}
+
+/*
+    mid-section
+*/
+
+.mid-section {
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-text-light);
+    font-size: .7rem;
+}
+
+.post-input {
+    outline: none;
+    border: 1px solid var(--clr-text-low-emp);
+    background-color: transparent;
+}
