@@ -39,7 +39,6 @@ nav  {
 }
 
 .search-form {
-    position: relative;
 }
 
 .search-input {
@@ -148,7 +147,6 @@ nav .navbar-nav .active-link .nav-link:hover {
 */
 
 .sidebar-left {
-    position: relative;
     background-color: var(--clr-dark-gray);
     color: var(--clr-text-light);
     font-size: .7rem;
@@ -241,8 +239,89 @@ nav .navbar-nav .active-link .nav-link:hover {
     font-size: .7rem;
 }
 
-.post-input {
-    outline: none;
+.post-btn {
+    color: var(--clr-text-light);
     border: 1px solid var(--clr-text-low-emp);
     background-color: transparent;
+    position: relative;
+    font-size: .85rem;
+    font-weight: 500;
 }
+
+.post-btn:hover,
+.post-btn:focus {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-text-light);
+}
+
+.post-btn-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.btn-container .btn {
+    font-size: .95rem;
+    color: var(--clr-text-light);
+}
+
+.btn-container .btn:hover,
+.btn-container .btn:focus {
+    background-color: #38434f;
+}
+
+.btn-container i {
+    font-size: 1.05rem;
+}
+
+.photo-icon,
+.like-icon {
+    color: var(--clr-action);
+}
+
+.video-icon,
+.clap-icon {
+    color: #7cc57c;
+}
+
+.event-icon {
+    color: #bea245;
+}
+
+.article-icon,
+.hearth-icon {
+    color: #cc9696;
+}
+
+i.fa-ellipsis {
+    font-size: 1.5rem;
+    color: var(--clr-text-light);
+    padding: 4px 5px;
+}
+
+i.fa-ellipsis:hover,
+i.fa-ellipsis:focus {
+    border-radius: 100%;
+    background-color: var(--clr-light-gray);
+}
+
+.post-user-info-text {
+    font-size: .9rem;
+}
+
+.btn-follow-blue {
+    color: var(--clr-action);
+    font-size: 1rem;
+}
+
+.btn-follow-blue:hover,
+.btn-follow-blue:focus {
+    background-color: var(--clr-light-gray);
+    color: var(--clr-action);
+}
+
+.post-text {
+    font-size: .9rem;
+}
+
