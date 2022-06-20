@@ -1,3 +1,5 @@
+// to get today's date
+
 const getTodayDate = () => {
     const today = new Date();
     const weekDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -88,6 +90,3 @@ function deleteElement() {
 function check(){
     this.classList.toggle("checked");
 }
-
-
-// localStorage.clear()
