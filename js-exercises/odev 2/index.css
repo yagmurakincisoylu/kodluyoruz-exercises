@@ -176,7 +176,10 @@ h1 {
     justify-content: space-between;
 }
 
-
+.alert .delete-btn {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 
 
